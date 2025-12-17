@@ -1,6 +1,6 @@
 # IO Design
 
-This document specifies the IO model for the Molia DHT implementation. It aligns with `Modern-DHT-Blueprint-2025.md`, `Zero-Allocation-Design.md`, and `Shared-Nothing-Architecture.md`.
+This document specifies the IO model for the Molia DHT implementation. It aligns with [Zero-Allocation Design](../architecture/zero-allocation-design.md) and [Shared-Nothing Architecture](../architecture/shared-nothing-architecture.md).
 
 ---
 

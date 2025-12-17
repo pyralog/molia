@@ -1,6 +1,6 @@
 # WireGuard Per‑Shard Integration
 
-This document specifies how to integrate a userspace WireGuard engine per shard, aligned with `Shared-Nothing-Architecture.md`, `IO-Design.md`, and the blueprint’s transport security shift to WireGuard.
+This document specifies how to integrate a userspace WireGuard engine per shard, aligned with [Shared-Nothing Architecture](../architecture/shared-nothing-architecture.md), [IO Design](../networking/io-design.md), and the blueprint's transport security shift to WireGuard.
 
 ---
 

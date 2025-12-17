@@ -1,6 +1,6 @@
 # Zero-Allocation Design
 
-This document specifies a zero-allocation (or strictly bounded-allocation) strategy for the Molia DHT implementation. It complements `Modern-DHT-Blueprint-2025.md` by defining concrete budgets, structures, APIs, and verification methods to keep the hot paths allocation-free in steady state.
+This document specifies a zero-allocation (or strictly bounded-allocation) strategy for the Molia DHT implementation, defining concrete budgets, structures, APIs, and verification methods to keep the hot paths allocation-free in steady state.
 
 ---
 

@@ -1,6 +1,6 @@
 # Shared-Nothing Architecture
 
-This document specifies a shared-nothing architecture for the Molia DHT implementation. It complements `Modern-DHT-Blueprint-2025.md` and `Zero-Allocation-Design.md` by defining how we partition state, schedule work, and communicate without shared mutable memory, maximizing cache locality, scalability, and failure isolation.
+This document specifies a shared-nothing architecture for the Molia DHT implementation. It complements [Zero-Allocation Design](zero-allocation-design.md) by defining how we partition state, schedule work, and communicate without shared mutable memory, maximizing cache locality, scalability, and failure isolation.
 
 ---
 

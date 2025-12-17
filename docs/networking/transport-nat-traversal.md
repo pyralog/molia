@@ -1,6 +1,6 @@
 # Transport & NAT Traversal
 
-This document details the transport stack and NAT traversal strategy for Molia DHT. It complements `IO-Design.md` (I/O paths), `WireGuard-Integration.md` (per‑shard crypto/sessioning), and the blueprint’s section "Transport & NAT Traversal".
+This document details the transport stack and NAT traversal strategy for Molia DHT. It complements [IO Design](io-design.md) (I/O paths), [WireGuard Integration](../security/wireguard-integration.md) (per‑shard crypto/sessioning), and the blueprint's section "Transport & NAT Traversal".
 
 ---
 
@@ -16,8 +16,8 @@ This document details the transport stack and NAT traversal strategy for Molia D
 ## 1) Transport Stack
 
 - Base: UDP sockets per shard (`SO_REUSEPORT`).
-- Security: userspace WireGuard per shard; see `WireGuard-Integration.md` (e.g., [BoringTun](https://github.com/cloudflare/boringtun)).
-- RPC: length‑delimited framing over plaintext payloads after WG decapsulation (see `Modern-DHT-Blueprint-2025.md` §7 Encoding).
+- Security: userspace WireGuard per shard; see [WireGuard Integration](../security/wireguard-integration.md) (e.g., [BoringTun](https://github.com/cloudflare/boringtun)).
+- RPC: length‑delimited framing over plaintext payloads after WG decapsulation.
 - Multiplexing: logical streams by request correlation IDs; no kernel stream abstraction.
 - Pacing: token buckets per peer and per `/24`; optional NIC pacing.
 

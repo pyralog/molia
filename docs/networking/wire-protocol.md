@@ -1,13 +1,13 @@
 # Wire Protocol
 
-This document defines the Molia DHT wire protocol carried over UDP and protected by the WireGuard protocol (userspace, no TUN). It complements `Modern-DHT-Blueprint-2025.md` §7, `IO-Design.md`, and `WireGuard-Integration.md`.
+This document defines the Molia DHT wire protocol carried over UDP and protected by the WireGuard protocol (userspace, no TUN). It complements [IO Design](io-design.md) and [WireGuard Integration](../security/wireguard-integration.md).
 
 ---
 
 ## 0) Layering & Scope
 
 - Transport: UDP datagrams. Security: WireGuard data messages. One application message per datagram.
-- Pre‑handshake: node stays silent by default; see `WireGuard-Integration.md` and `Sybil-Resistance.md`.
+- Pre‑handshake: node stays silent by default; see [WireGuard Integration](../security/wireguard-integration.md) and [Sybil Resistance](../security/sybil-resistance.md).
 - Encoding: Protobuf for message bodies; strict size limits. No length prefix (UDP provides framing).
 
 ---
@@ -136,7 +136,7 @@ Notes:
 ## 8) Rate Limiting & QoS
 
 - `qos` guides scheduling: 0 control, 1 coordination, 2 hints.
-- Enforced by token buckets per peer and per `/24` (see `IO-Design.md`).
+- Enforced by token buckets per peer and per `/24` (see [IO Design](io-design.md)).
 - On RATE_LIMITED, send ERROR with optional retry_after_ms.
 
 ---

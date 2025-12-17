@@ -1,6 +1,6 @@
 # Sybil Resistance
 
-This document specifies Sybil- and abuse-resistance mechanisms for Molia DHT. It aligns with `WireGuard-Integration.md`, `Transport-NAT-Traversal.md`, `Shared-Nothing-Architecture.md`, and the blueprint’s Security section.
+This document specifies Sybil- and abuse-resistance mechanisms for Molia DHT. It aligns with [WireGuard Integration](wireguard-integration.md), [Transport & NAT Traversal](../networking/transport-nat-traversal.md), and [Shared-Nothing Architecture](../architecture/shared-nothing-architecture.md).
 
 ---
 
